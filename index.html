@@ -39,6 +39,9 @@
                 .left-part {
                     max-width: 40%;
                 }
+                .right-part, .left-part {
+                    overflow: overlay;
+                }
             }
 
             .profile-pic {
@@ -98,7 +101,7 @@
                 color: var(--left-part-text-color);
             }
 
-            li {
+            .skills-info li {
                 color: var(--left-part-text-color);
             }
 
@@ -119,8 +122,20 @@
                 letter-spacing: 3px;
             }
 
-            .job-description {
+            .top-margin {
                 margin-top: 2em;
+            }
+
+            .half-top-margin {
+                margin-top: 1em;
+            }
+
+            .bottom-margin {
+                margin-bottom: 2em;
+            }
+
+            .half-bottom-margin {
+                margin-bottom: 1em;
             }
 
             .job-title {
@@ -139,6 +154,14 @@
             .core-technologies {
                 text-decoration: underline;
                 color: black;
+            }
+
+            .tech-skillz-summary {
+                font-family: Helvetica;
+            }
+
+            .educational-history {
+                font-family: Helvetica;
             }
 
         </style>
@@ -201,7 +224,7 @@
                         Employment History
                     </div>
 
-                    <div class="job-description">
+                    <div class="job-description top-margin">
                         <div class="job-title">CorporateServices.com <span class="years-active">(2016-2021)</span></div>
                         <div class="job-details">
                             Worked as a frontend lead in a small team on a product. <br />
@@ -212,32 +235,54 @@
                     </div>
 
 
-                    <div class="job-description">
+                    <div class="job-description top-margin">
                         <div class="job-title">ThinkTank.net <span class="years-active">(2014-2016)</span></div>
                         <div class="job-details">
                             Worked as a backend enginner in a dedicated team on a product. <br />
                             Product purpose is to provide ability of a collaboration and brainstorming for teams. <br />
-                            <span class="core-technologies">Core technologies:</span> GWT, Spring, PostgreSQL, HTTP Long Pooling, Objective C
+                            <span class="core-technologies">Core technologies:</span> GWT, Spring, PostgreSQL, HTTP Long Pooling, Objective C, Git
                         </div>
                     </div>
 
-                    <div class="job-description">
+                    <div class="job-description top-margin">
                         <div class="job-title">Pics.io <span class="years-active">(2014)</span></div>
                         <div class="job-details">
                             Worked as a frontend enginner on a startup. <br />
                             Startup purpose is to provide in-browser photo editing capabilities like in Lightroom. <br />
-                            <span class="core-technologies">Core technologies:</span> JavaScript
+                            <span class="core-technologies">Core technologies:</span> JavaScript, Git
                         </div>
                     </div>
 
-                    <div class="job-description">
+                    <div class="job-description top-margin bottom-margin">
                         <div class="job-title">WDS.co <span class="years-active">(2012-2014)</span></div>
                         <div class="job-details">
                             Worked as a Java developer. <br />
                             Took part in development projects related to mobile device managment and provisioning. <br />
-                            <span class="core-technologies">Core technologies:</span> Java, Play Framework, OMA Device Management, Ruby on Rails, MySQL
+                            <span class="core-technologies">Core technologies:</span> Java, Play Framework, OMA Device Management, Ruby on Rails, MySQL, Git
                         </div>
                     </div>
+
+                    <div class="heading top-margin bottom-margin">
+                        Technical Skills
+                    </div>
+
+                    <div class="tech-skillz-summary">
+                        A vision of how thing are working on, from a physical layer up to application layer. 
+                        Significant expertise in building, deploying and maintaining software. 
+                        Hands on experience with setting up environments, releases and production support.
+                    </div>
+
+                    <div class="heading top-margin bottom-margin">
+                        Educational History
+                    </div>
+
+                    <div class="educational-history">
+                            <div class="bottom-margin"> Lviv Polytechnic National University<br/> Master of Computer Science (2014-2015) </div>
+                            <div> Lviv Polytechnic National University<br/> Bachelor of Computer Science (2010-2014) </div>
+                    </div>
+
+
+
 
                 </div>
 
