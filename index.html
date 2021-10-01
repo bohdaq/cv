@@ -8,6 +8,7 @@
                 --left-part-background-color: rgb(73,78,95);
                 --left-part-heading-color: rgb(255,231,211);
                 --left-part-text-color: rgb(247,248,243);
+                --heading-background-color: rgb(255,231,211);
             }
             body {
                 min-height: 100%;
@@ -106,6 +107,35 @@
                 text-decoration: underline;
             }
 
+            .right-part-content {
+                margin: 4em;
+            }
+
+            .heading {
+                background-color: var(--heading-background-color);
+                padding: 1em;
+                text-transform: uppercase;
+                font-size: 22px;
+                letter-spacing: 3px;
+            }
+
+            .job-description {
+                margin-top: 2em;
+            }
+
+            .job-title {
+                font-size: 22px;
+            }
+
+            .years-active {
+                font-size: 16px;
+            }
+
+            .job-details {
+                color: grey;
+                margin-top: .5em;
+            }
+
         </style>
     </head>
     <body>
@@ -160,7 +190,25 @@
 
 
             <div class="right-part">
-                right
+                
+                <div class="right-part-content">
+                    <div class="heading">
+                        Employment History
+                    </div>
+
+                    <div class="job-description">
+                        <div class="job-title">CorporateServices.com <span class="years-active">(2016-2021)</span></div>
+                        <div class="job-details">
+                            Worked as a frontend lead on a product. <br />
+                            Product purpose is to provide ability of a company incorporation in Singapore. <br />
+                            Worked closely on gathering requirements, discussions and technical implementation. <br />
+                            <span class="core-technologies">Core technologies:</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
             </div>
 
 
