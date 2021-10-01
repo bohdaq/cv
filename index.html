@@ -32,18 +32,6 @@
                 background-color: white;
             }
 
-            @media only screen and (min-width: 768px) {
-                .main-container {
-                    flex-direction: row;
-                }
-                .left-part {
-                    max-width: 40%;
-                }
-                .right-part, .left-part {
-                    overflow: overlay;
-                }
-            }
-
             .profile-pic {
                 width: 150px;
                 border-radius: 200px;
@@ -83,18 +71,18 @@
             .name-title {
                 display: flex;
                 flex-direction: column;
-                margin: 0 4em;
+                margin: 0 2em;
                 align-items: center;
             }
 
             .top-bar-separator {
                 height: 10px;
                 background-color: var(--left-part-heading-color);
-                margin: 0 4em;
+                margin: 0 2em;
             }
 
             .blocks {
-                margin: 2em 4em;
+                margin: 2em 2em;
             }
 
             p {
@@ -111,7 +99,7 @@
             }
 
             .right-part-content {
-                margin: 4em;
+                margin: 2em;
             }
 
             .heading {
@@ -162,6 +150,34 @@
 
             .educational-history {
                 font-family: Helvetica;
+            }
+
+            @media only screen and (min-width: 768px) {
+                .main-container {
+                    flex-direction: row;
+                }
+                .left-part {
+                    max-width: 40%;
+                }
+                .right-part, .left-part {
+                    overflow: overlay;
+                }
+
+                .name-title {
+                    margin: 0 4em;
+                }
+
+                .top-bar-separator {
+                    margin: 0 4em;
+                }
+
+                .blocks {
+                    margin: 2em 4em;
+                }
+
+                .right-part-content {
+                    margin: 2em;
+                }
             }
 
         </style>
