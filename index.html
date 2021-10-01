@@ -5,6 +5,9 @@
         <style>
             html {
                 height: 100%;
+                --left-part-background-color: rgb(73,78,95);
+                --left-part-heading-color: rgb(255,231,211);
+                --left-part-text-color: rgb(247,248,243);
             }
             body {
                 min-height: 100%;
@@ -19,7 +22,8 @@
 
             .left-part {
                 min-width: 40%;
-                background-color: beige;
+                max-width: 100%;
+                background-color: var(--left-part-background-color);
             }
 
             .right-part {
@@ -31,7 +35,77 @@
                 .main-container {
                     flex-direction: row;
                 }
+                .left-part {
+                    max-width: 40%;
+                }
             }
+
+            .profile-pic {
+                width: 150px;
+                border-radius: 200px;
+            }
+
+            .profile-pic-container {
+                display: flex;
+                justify-content: center;
+                margin: 2em;
+            }
+
+            h1 {
+                font-size: 32px;
+                font-weight: 200;
+                color: var(--left-part-heading-color);
+                text-transform: uppercase;
+            }
+
+            h2 {
+                font-size: 22px;
+                font-weight: 200;
+                color: var(--left-part-heading-color);
+                text-transform: uppercase;
+            }
+
+            h4 {
+                font-size: 18px;
+                font-weight: 200;
+                color: var(--left-part-heading-color);
+                text-transform: uppercase;
+            }
+
+            .no-top-margin {
+                margin-top: 0;
+            }
+
+            .name-title {
+                display: flex;
+                flex-direction: column;
+                margin: 0 4em;
+                align-items: center;
+            }
+
+            .top-bar-separator {
+                height: 10px;
+                background-color: var(--left-part-heading-color);
+                margin: 0 4em;
+            }
+
+            .blocks {
+                margin: 2em 4em;
+            }
+
+            p {
+                color: var(--left-part-text-color);
+            }
+
+            li {
+                color: var(--left-part-text-color);
+            }
+
+            a {
+                color: white;
+                text-decoration: underline;
+            }
+
         </style>
     </head>
     <body>
@@ -39,7 +113,48 @@
             
             
             <div class="left-part">
-                left
+                <div class="profile-pic-container">
+                    <img class="profile-pic" src="profile2.png" />    
+                </div>
+                <div class="name-title">
+                    <h1>Bohdan Tsap</h1>
+                    <h4 class="no-top-margin">Software Engineer</h4>
+                </div>
+
+                <div class="top-bar-separator"></div>
+
+                <div class="blocks">
+                    <div class="personal-info">
+                        <h2>Personal Info</h2>
+                        <p>
+                            Highly competent sofware engineer capable of designing solutions from "ground up".
+                            Deep understanding of underlying technical stack alongside with knowledge of the basic computer science.
+                            More than 8 years of software engineering experience including frontend and backend. 
+                        </p>
+                    </div>
+
+                    <div class="skills-info">
+                        <h2>Skills & Abilities</h2>
+                        <p>
+                            <ul>
+                                <li>Team work</li>
+                                <li>Collaboration</li>
+                                <li>Proactiveness</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <p>
+                            Cell: <a href="tel:380630386173">38 063 03 86 173</a> <br />
+                            Email: <a href="mailto:bohdan.tsap@tutanota.com">bohdan.tsap@tutanota.com</a><br />
+                            Lviv, Ukraine
+                        </p>
+                    </div>
+                </div>
+                
+                
             </div>
 
 
